@@ -816,9 +816,13 @@ section {
   overflow: hidden;
 }
 
-.rowbaner {
-  background: url(../img/hero-bg.jpg), top center;
+.rowbaner{
   height: 400px;
+  
+  /* background: url(../img/hero-bg.jpg), top center; */
+}
+.rowbaner img{
+  object-fit: cover;
 }
 
 .about .play-btn::after {
