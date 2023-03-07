@@ -2,7 +2,8 @@ const services = [
     {
       icon: '<i class="fas fa-laptop-medical"></i>',
       title: "formatação",
-      description: "Formatação é o processo de apagar todos os dados de um dispositivo de armazenamento, como um disco rígido ou pendrive, e prepará-lo para receber novos dados."
+      description: "Formatação é o processo de apagar todos os dados de um dispositivo de armazenamento, como um disco rígido ou pendrive, e prepará-lo para receber novos dados.",
+      paramet: 'clickCard("formataocao")'
     },
     
     {
@@ -66,10 +67,11 @@ const services = [
     },
 ]
 
+
 const row = document.querySelector(".row-services")
 services.forEach(element => {
     row.innerHTML +=`
-    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" onclick="clickCard&#40;'${element.title}'&#41;">
     <div class="icon-box">
       <div class="icon">${element.icon}</div>
       <h4><a href="">${element.title}</a></h4>
